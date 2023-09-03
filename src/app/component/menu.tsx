@@ -7,7 +7,7 @@ type MenuProps = {
 
 const Menu: React.FC<MenuProps> = ({items}) => {
     return (
-        <ul>
+        <ul className='flex flex-row gap-[20px]'>
             {items.map(item => (
                 <li>
                     <a href='{item.url}'>

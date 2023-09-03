@@ -4,7 +4,7 @@ import Menu from "./menu"
 
 export default function MainNavigation() {
     return (
-        <nav>
+             <nav>
             {/* Logo element decalration */}
             <div className="float-left">
                 <img className="w-[40px] float-left align-middle" src="assets/images/logo.png"/>
@@ -13,7 +13,7 @@ export default function MainNavigation() {
                 <span className="font-['Castle-Tult']"> &nbsp; A Social Casino</span>
             </div>
         
-            <nav>
+            <nav className="pt-[14px] text-[20px] font-['Boulder-Regular']">
                 <Menu items={mainMenuItems}/>
             </nav>
         
