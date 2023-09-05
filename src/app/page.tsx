@@ -1,3 +1,4 @@
+import GameCategory from "./component/game-category"
 import Login from "./component/login"
 import MainNavigation from "./component/main-navigation"
 import SecondaryNavigation from "./component/secondary-navigation"
@@ -10,6 +11,7 @@ export default function Home() {
             <MainNavigation/>
             <Login/>
             <SecondaryNavigation/>
+            <GameCategory/>
           </section>
           <section className="flex-[40%] mt-[20px]">
 

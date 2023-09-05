@@ -1,10 +1,10 @@
 import Menu from "./menu"
 
-import menuItems from "../data/secondary-menu-items"
+import menuItems from "../data/game-category-menu-items"
 
-export default function SecondaryNavigation() {
+export default function GameCategoryMenuNavigation() {
     return (
-         <nav className="w-full inline-block mt-4 text-xl font-['Arial']">
+         <nav className="">
                 <Menu items={menuItems} menuItemClassName="active:text-[red] focus:text-[red] hover:text-[red] active:underline focus:underline hover:underline"/>
         </nav>
     )
