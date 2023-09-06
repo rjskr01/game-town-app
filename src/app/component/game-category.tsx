@@ -1,4 +1,5 @@
 import GameCategoryMenuNavigation from "./game-category-menu-navigation";
+import GameListcontainer from "./game-list-container";
 
 const GameCategory = () => {
     return (
@@ -9,6 +10,7 @@ const GameCategory = () => {
                 </div>
                 <GameCategoryMenuNavigation/>
             </div>
+            <GameListcontainer/>
         </div>
     )
 }

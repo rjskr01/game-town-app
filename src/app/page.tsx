@@ -12,6 +12,7 @@ export default function Home() {
             <Login/>
             <SecondaryNavigation/>
             <GameCategory/>
+            
           </section>
           <section className="flex-[40%] mt-[20px]">
 
