@@ -11,8 +11,8 @@ const GameListcontainer = () => {
 
         <div id="gameListContainer" className="flex flex-row my-[40px] mx-[20px]">
                     <div className="flex-1 text-black font-['Arial'] text-[20px]">
-                        <div className="gameHeader">
-                            <img src="assets/images/jack-trans.png" />
+                        <div className="flex items-center">
+                            <img src="assets/images/jack-trans.png" className="w-[50px]"/>
                             <div className="text-[red] font-extrabold">HOUSE GAMES</div>
                         </div>
                         <GameList items={videoPokerItems} title="Video Poker"/>
@@ -26,7 +26,7 @@ const GameListcontainer = () => {
                         <img  src="assets/images/games/headsup.png" />
                         <img  src="assets/images/games/xtraplay.png" />
                     </div>
-                </div>
+        </div>
     )
 }
 
