@@ -6,11 +6,11 @@ const Login = () => {
                 </div>
                 <div className="float-left text-[11px] mx-[20px]">
                     <div className="mb-[5px]">
-                        <label>USER NAME</label>
+                        <label className="mr-[10px]">USER NAME</label>
                         <input type="text" className="p-0" />
                     </div>
                     <div>
-                        <label>PASS WORD</label>
+                        <label className="mr-[10px]">PASS WORD</label>
                         <input type="password" />
                     </div>
 
