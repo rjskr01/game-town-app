@@ -8,9 +8,9 @@ const DropDownList: React.FC<DropDownListProps> = ({selectedItem = "NV"}) => {
     return (
         <select className="border-none padding-[0.75rem] appearance-none text-[20px] stateDrpDown">
             {
-                stateItems.map(item => {
+                stateItems.map((item, index) => {
                     return (
-                        <option value={item.key} selected={item.key === selectedItem}>{item.value}</option>
+                        <option key={index} value={item.key} selected={item.key === selectedItem}>{item.value}</option>
                     )
                 })
             }

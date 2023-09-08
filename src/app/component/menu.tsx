@@ -10,7 +10,7 @@ const Menu: React.FC<MenuProps> = ({items, menuItemClassName = ""}) => {
     return (
         <ul className='flex flex-row gap-[20px]'>
             {items.map(item => (
-                <li>
+                <li key={item.id}>
                     <a href='{item.url}' className={menuItemClassName}>
                     {item.name}
                     </a>

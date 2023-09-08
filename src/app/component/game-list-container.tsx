@@ -19,7 +19,7 @@ const GameListcontainer = () => {
                         <GameList items={videoEZPokerItems} title="Video Poker"/>
                         <GameList items={oneOnOnePokerItems} title="Video Poker"/>
                     </div>
-                    <div className="gameListCls gameListImgCls">
+                    <div className="flex flex-1 justify-center flex-row flex-wrap gameListCls gameListImgCls">
                         <img  src="assets/images/games/minitex.png" />
                         <img  src="assets/images/games/doubleshot.png" />
                         <img  src="assets/images/games/texround.png" />
