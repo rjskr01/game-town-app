@@ -2,6 +2,7 @@ import GameCategory from "./component/game-category"
 import Login from "./component/login"
 import MainNavigation from "./component/main-navigation"
 import SecondaryNavigation from "./component/secondary-navigation"
+import TournamentContainer from "./component/tournament-container"
 
 export default function Home() {
     return (
@@ -12,11 +13,8 @@ export default function Home() {
             <Login/>
             <SecondaryNavigation/>
             <GameCategory/>
-            
           </section>
-          <section className="flex-[40%] mt-[20px]">
-
-          </section>
+        <TournamentContainer/>
         </div>
       </main>
     )
