@@ -1,7 +1,7 @@
 import stateItems from "../data/state-items";
 
 type DropDownListProps = {
-    selectedItem: string
+    selectedItem?: string
 } 
 
 const DropDownList: React.FC<DropDownListProps> = ({selectedItem = "NV"}) => {
