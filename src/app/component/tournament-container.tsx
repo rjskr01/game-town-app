@@ -1,5 +1,6 @@
 'use client'
 
+import AddBanner from "./add-banner";
 import DropDownList from "./drop-down-list";
 
 const TournamentContainer = () => {
@@ -44,9 +45,7 @@ const TournamentContainer = () => {
                     </tr>
                   </table>
             </div>
-            <div id="adsHolder" className="adsHolder">
-
-            </div>
+           <AddBanner/>
         </div>
     </section>
     )
