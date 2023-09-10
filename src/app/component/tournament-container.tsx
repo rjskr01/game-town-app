@@ -2,6 +2,7 @@
 
 import AddBanner from "./add-banner";
 import DropDownList from "./drop-down-list";
+import TournamentHeader from "./tournament-header";
 
 const TournamentContainer = () => {
     const onEventTitleClick = () => {
@@ -9,15 +10,8 @@ const TournamentContainer = () => {
     }
     return (
         <section className="trnmntaddSectionCls mt-[20px] flex-[40%]">
-        <div id="dynamicHolder" className="">
-            <div className="absolute left-[60.1%] top-[49px]">
-                <img id="dynamicImg" className="w-[40px] align-middle" src="assets/images/logo-trans.png" />
-            </div>
-            <div id="dynamicHeader" className="bg-white text-[black] text-[30px] w-[90%] text-center h-[37px] leading-[37px] font-['Boulder-Regular'] font-boulder">
-                600 Free Jacks Daily = 60 Minutes of Play
-            </div>
-        </div>
-        <div id="trmntLstHdr" className="mt-[60px] text-[30px] w-[55%] text-center font-['Arial, Helvetica, sans-serif']">TOURNAMENT LISTING</div>
+            <TournamentHeader/>
+            <div id="trmntLstHdr" className="mt-[60px] text-[30px] w-[55%] text-center font-['Arial, Helvetica, sans-serif']">TOURNAMENT LISTING</div>
         <div id='trnmtLstnHolder' className="w-[90%] flex bg-white h-[calc(100vh-200px)] mt-[30px] text-[black]">
             <div id="trnmtdtsHdr" className="flex-[2]">
                 <div className="w-full m-auto text-center mt-[20px]">
