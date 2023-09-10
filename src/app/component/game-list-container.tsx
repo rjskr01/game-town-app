@@ -1,15 +1,17 @@
 import {videoPokerItems , videoEZPokerItems, oneOnOnePokerItems} from "../data/game-items";
 import GameList from "./game-list";
 
-const GameListcontainer = () => {
+interface GameListContainerProps  {
+    isHidden: boolean;
+    onClick?: () => void;
+}
 
-    const handleClick = () => {
-        
-    }
+const GameListcontainer: React.FC<GameListContainerProps> = ({isHidden ,onClick}) => {
 
+  
     return (
 
-        <div id="gameListContainer" className="flex flex-row my-[40px] mx-[20px]">
+        <div id="gameListContainer" className={`flex flex-row my-[40px] mx-[20px] ${isHidden ? 'hidden' : ''}`}>
                     <div className="flex-1 text-black font-['Arial'] text-[20px]">
                         <div className="flex items-center">
                             <img src="assets/images/jack-trans.png" className="w-[50px]"/>
@@ -20,11 +22,11 @@ const GameListcontainer = () => {
                         <GameList items={oneOnOnePokerItems} title="Video Poker"/>
                     </div>
                     <div className="gameListCls gameListImgCls">
-                        <img  src="assets/images/games/minitex.png" />
-                        <img  src="assets/images/games/doubleshot.png" />
-                        <img  src="assets/images/games/texround.png" />
-                        <img  src="assets/images/games/headsup.png" />
-                        <img  src="assets/images/games/xtraplay.png" />
+                        <img onClick={onClick} src="assets/images/games/minitex.png" />
+                        <img onClick={onClick} src="assets/images/games/doubleshot.png" />
+                        <img onClick={onClick} src="assets/images/games/texround.png" />
+                        <img onClick={onClick} src="assets/images/games/headsup.png" />
+                        <img onClick={onClick} src="assets/images/games/xtraplay.png" />
                     </div>
         </div>
     )

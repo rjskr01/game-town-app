@@ -1,6 +1,11 @@
 'use client';
 
-const GameContainer = () => {
+
+type GameContainerProps = {
+    isHidden: boolean;
+}
+
+const GameContainer: React.FC<GameContainerProps>  = ({isHidden}) => {
 
     const onGameResizeClick = () => {
         
@@ -11,7 +16,7 @@ const GameContainer = () => {
     }
 
     return (
-    <div id="gameContainer" className="hidden">
+    <div id="gameContainer" className={`${isHidden ? 'hidden' : ''}`}>
     <div className="flex w-full text-black text-[31px] font-['Arial']">
         <div className="flex-[9]">House Blackjack Tournament (NV)</div>
         <div  className='minmaxBtn flex-[0.3] pointer text-right' onClick={onGameResizeClick} id="maxIcon">&#128471;&#xFE0E;</div>
