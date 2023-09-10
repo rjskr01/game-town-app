@@ -5,6 +5,14 @@ import DropDownList from "./drop-down-list";
 import TournamentHeader from "./tournament-header";
 
 const TournamentContainer = () => {
+    let currentDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      });
+
+    currentDate = currentDate.replace(/\//g, "-");
+
     const onEventTitleClick = () => {
 
     }
@@ -22,7 +30,7 @@ const TournamentContainer = () => {
                     <a id ="clubEvent" onClick={onEventTitleClick} href="#">CLUB EVENTS</a>
                 </div>
                 <div className="dateHolder margin20 font-Arial fontSize20">
-                    <div id="trmntDate"></div>
+                    <div id="trmntDate">{currentDate}</div>
                 </div>
                 <table className="trnamentTble textAlignCentre font-Arial fontSize20">
                     <tr>
